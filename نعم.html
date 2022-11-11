@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 35px">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>نعم</title>
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <style>
+      select {
+        width: 31.25rem;
+        height: 3rem;
+        margin: 0 8rem 0 0;
+        background-color: #cca01d;
+      }
+      textarea {
+        width: 31.25rem;
+        margin-right: 8rem;
+      }
+      .button {
+        margin: 0 8rem 0 0;
+      }
+      html {
+        font-size: 16px !important;
+      }
+      label {
+        display: block;
+        font-size: 30px;
+        font-family: Roboto-Bold;
+        color: #b3b0ab;
+      }
+      input {
+        display: block;
+      }
+    </style>
+  </head>
+  <body
+    class="body"
+    dir="rtl"
+    style="
+      background-image: url(img/background-yes.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    "
+  >
+    <div class="container-fluid">
+      <div class="form" style="padding-top: 20rem">
+        <h1 style="color: #b3b0ab; padding-bottom: 5rem">
+          مركز الاتصال الماسي
+        </h1>
+        <form
+          action="/action_page.php"
+          style="display: flex; flex-direction: column; align-items: center"
+        >
+          <div style="padding-top: 1rem" class="nom-r">
+            <label style="color: #b3b0ab; font-size: 30px" for="quantity"
+              >الرقم الماسي:</label
+            >
+            <input
+              class="input-yes"
+              placeholder="ادخل الرقم الماسي"
+              type="text"
+              id="quantity"
+              name="quantity"
+              min="1"
+              max="12 "
+              required
+              style="margin-right: 133px"
+            />
+          </div>
+          <div style="padding-top: 1rem">
+            <label style="color: #b3b0ab; font-size: 30px" for="quantity"
+              >كود الدعم:</label
+            >
+            <input
+              style="margin-right: 133px"
+              class="input-yes"
+              placeholder="ادخل كود الدعم"
+              type="password"
+              id="quantity"
+              name="quantity"
+              min="1"
+              max="12"
+              required
+            />
+          </div>
+          <div>
+            <label for="wayOfCall" style="padding-top: 4rem"
+              >طريقة التواصل معك:</label
+            >
+            <select id="wayOfCall" required>
+              <option value="">اختر</option>
+              <option id="jawal" name="fav_language" value="jawal">
+                رقم الجوال
+              </option>
+              <option id="jawal" name="fav_language" value="jawal">
+                البريد الالكتروني
+              </option>
+              <option id="jawal" name="fav_language" value="jawal">
+                رقم أخر
+                <input
+                  id="target-input"
+                  class="input-yes target-input"
+                  placeholder="ادخل الرقم"
+                  type="text"
+                  style="display: none; margin-top: 1rem"
+                />
+              </option>
+            </select>
+          </div>
+          <div>
+            <label for="reasonOfCall" style="padding-top: 4rem"
+              >سبب الاتصال:</label
+            >
+            <select id="reasonOfCall" required>
+              <option value="">اختر</option>
+              <option id="jawal" name="fav_language" value="jawal">
+                طلب جديد
+              </option>
+              <option id="jawal" name="fav_language" value="jawal">
+                استفسار
+              </option>
+              <option id="jawal" name="fav_language" value="jawal">
+                عرض أسعار
+              </option>
+              <option id="jawal" name="fav_language" value="jawal">
+                طلب حساب أعمال
+              </option>
+            </select>
+          </div>
+          <div>
+            <p style="padding-top: 4rem">نوع الرسالة :</p>
+            <select required>
+              <option value="">اختر</option>
+              <option id="jawal" name="fav_language" value="jawal">عامة</option>
+
+              <option id="jawal" name="fav_language" value="jawal">
+                ادارية/عاجلة
+              </option>
+            </select>
+          </div>
+          <div>
+            <label for="favoriteTimeOfCall" style="padding-top: 4rem"
+              >فترة الاتصال المفضلة:</label
+            >
+            <select id="favoriteTimeOfCall" required>
+              <option value="">اختر</option>
+              <option id="jawal" name="fav_language" value="jawal">
+                الصباح
+              </option>
+              <option id="jawal" name="fav_language" value="jawal">
+                المساء
+              </option>
+            </select>
+          </div>
+          <div>
+            <label for="description" style="padding-top: 4rem"
+              >نموذج كتابة الرسالة:</label
+            >
+            <textarea
+              required
+              class="area"
+              name="text-area"
+              id="description"
+              cols="70"
+              rows="7"
+            ></textarea>
+          </div>
+          <div class="button">
+            <button
+              class="sendto"
+              style="width: 500px; height: 60px; font-size: 1.5rem"
+            >
+              أرسل
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
